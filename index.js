@@ -6,9 +6,9 @@ const app = express();
 const adminRouter = require("./routes")
 
 app.use(cors({
-    origin: 'http://localhost:5173/', // Allow only requests from this origin
-   // methods: ['GET', 'POST'], // Allow only specific HTTP methods
-    //allowedHeaders: ['Content-Type', 'Authorization'],
+    origin: 'https://restaurant-website-fvcyyo599-fatimairshad123s-projects.vercel.app/', // Allow only requests from this origin
+   methods: ['GET', 'POST'], // Allow only specific HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'],
    // credentials: true // Allow only specific headers
   }));
 //app.use(cors())
