@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect('mongodb+srv://Fatima:Fatima@cluster0.7bunznc.mongodb.net/Resturant-website');
 
 const AdminSchema = mongoose.Schema({
     username : String,
