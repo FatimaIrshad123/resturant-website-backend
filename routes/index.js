@@ -84,5 +84,8 @@ router.get('/all/ordered',async(req,res)=> {
     res.json(order)
 })
 
+router.get('/',(req,res) => {
+    res.json({msg:'hiii'})
+})
 
 module.exports = router;
