@@ -8,7 +8,7 @@ const adminRouter = require("./routes")
 
 app.use(cors({
     origin: 'https://6629ddaaaedc0a4923763ef2--resonant-dragon-5b2fe4.netlify.app',
-    credentials: include 
+    credentials: true
 }))
 
 app.use((req, res, next) => {
