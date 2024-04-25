@@ -6,7 +6,10 @@ const app = express();
 const adminRouter = require("./routes")
 
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://6629ddaaaedc0a4923763ef2--resonant-dragon-5b2fe4.netlify.app',
+    credentials: true 
+}))
 // Middleware for parsing request bodies
 app.use(bodyParser.json());
 app.use("/admin", adminRouter)
