@@ -7,7 +7,7 @@
     "dest": "/",
     "methods": ["GET","POST","PUT","DELETE"],
     "headers": {
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "https://6629d34b6f0112422665885a--resonant-dragon-5b2fe4.netlify.app/",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
         "Access-Control-Allow-Headers": "Content-Type, authorization"
       }
