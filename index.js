@@ -8,8 +8,16 @@ const adminRouter = require("./routes")
 
 app.use(cors({
     origin: 'https://6629ddaaaedc0a4923763ef2--resonant-dragon-5b2fe4.netlify.app',
-    credentials: true 
+    credentials: include 
 }))
+
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'https://6629e31b5f42be4dc6f679d8--resonant-dragon-5b2fe4.netlify.app');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type,authorization');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    next();
+  });
 // Middleware for parsing request bodies
 app.use(bodyParser.json());
 app.use("/admin", adminRouter)
